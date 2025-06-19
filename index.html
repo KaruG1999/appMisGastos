@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/style.css">   <!-- Link a css de la página -->
+    <title>Mi economía</title>
+</head>
+<!-- HTML -->
+<body>
+    <h1>Mi aplicación para gastos</h1>
+    <!-- formulario -->
+    <form id="transactionForm"  action="">
+
+        <div class="claseFormulario">
+            Tipo de transacción
+            <input type="radio" name="typeSelector" id="ingreso" value="Ingreso">  <!-- ambos con mismo nombre, para selecc uno  -->
+            <label for="ingreso">Ingreso</label>
+            <input type="radio" id="egreso" name="typeSelector" value="Egreso">
+            <label for="egreso">Egreso</label>
+        </div>
+        
+        <div class="claseFormulario">
+            <label for="transactionDescription">Descripción</label>
+            <input id="transactionDescription" type="text" name="transactionDescription">
+        </div>
+        
+        <div class="claseFormulario">
+            <label for="transactionCategory">Categoria</label>
+            <input id="transactionCategory" type="text" name="transactionCategory"> 
+        </div>
+        
+        <div class="claseFormulario">
+            <label for="transactionAmount">Monto</label>
+            <input id="transactionAmount" type="number" name="transactionAmount">
+        </div>
+        
+        <button type="submit" id="botonDeEnvio">Añadir</button>   
+
+    </form>
+
+    <!-- tabla  -->
+    <div class="">
+        <table id="transactionTable">
+            <tr>  <!-- tr = fila N -->
+                <th>Tipo</th>   <!-- th = encabezado de tabla -->
+                <th>Descripción</th>
+                <th>Monto</th>
+                <th>Categoría</th>
+            </tr>
+            <tr>    
+                <td>Ingreso</td>
+                <td>Sueldo</td> <!-- datos de tabla  (table date) -->
+                <td>1000</td>
+                <td>Trabajo</td>
+            </tr>
+            <tr>
+                <td>Egreso</td>
+                <td>BigMac</td>
+                <td>7000</td>
+                <td>Comida</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Link a Javascript -->
+    <script src="./script.js">
+    </script>
+
+</body>
+</html>
