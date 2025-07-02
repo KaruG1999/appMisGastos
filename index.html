@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/style.css">   <!-- Link a css de la página -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <!-- Link a css de la página -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Mi economía</title>
-</head>
-<!-- HTML -->
-<body>
+  </head>
+  <!-- HTML -->
+  <body>
     <h1>Mi aplicación para gastos</h1>
-    <!-- formulario -->
-    <form id="transactionForm"  action="">
+
+    <div>
+      <!-- formulario -->
+      <form id="transactionForm" action="">
+        <div class="claseFormulario">
+          Tipo de transacción
+          <input
+            required
+            type="radio"
+            name="typeSelector"
+            id="ingreso"
+            value="Ingreso"
+          />
+          <!-- ambos con mismo nombre, para selecc uno  -->
+          <label for="ingreso">Ingreso</label>
+          <input
+            required
+            type="radio"
+            id="egreso"
+            name="typeSelector"
+            value="Egreso"
+          />
+          <label for="egreso">Egreso</label>
+        </div>
 
         <div class="claseFormulario">
-            Tipo de transacción
-            <input type="radio" name="typeSelector" id="ingreso" value="Ingreso">  <!-- ambos con mismo nombre, para selecc uno  -->
-            <label for="ingreso">Ingreso</label>
-            <input type="radio" id="egreso" name="typeSelector" value="Egreso">
-            <label for="egreso">Egreso</label>
+          <label for="transactionDescription">Descripción</label>
+          <input
+            required
+            id="transactionDescription"
+            type="text"
+            name="transactionDescription"
+          />
         </div>
-        
-        <div class="claseFormulario">
-            <label for="transactionDescription">Descripción</label>
-            <input id="transactionDescription" type="text" name="transactionDescription">
-        </div>
-        
-        <div class="claseFormulario">
-            <label for="transactionCategory">Categoria</label>
-            <input id="transactionCategory" type="text" name="transactionCategory"> 
-        </div>
-        
-        <div class="claseFormulario">
-            <label for="transactionAmount">Monto</label>
-            <input id="transactionAmount" type="number" name="transactionAmount">
-        </div>
-        
-        <button type="submit" id="botonDeEnvio">Añadir</button>   
 
-    </form>
+        <div class="claseFormulario">
+          <label for="transactionAmount">Monto</label>
+          <input
+            required
+            min="0"
+            id="transactionAmount"
+            type="number"
+            name="transactionAmount"
+          />
+        </div>
+
+        <div class="claseFormulario">
+          <label for="transactionCategory">Categoria</label>
+          <select name="transactionCategory" id="transactionCategory">
+            <option value="" disabled selected>Selecciona tu opción</option>
+            <option value="comida">Comida</option>
+            <option value="transporte">Transporte</option>
+            <option value="entretenimiento">Entretenimiento</option>
+            <option value="salud">Salud</option>
+          </select>
+        </div>
+
+        <button type="submit" id="botonDeEnvio">Añadir</button>
+      </form>
+    </div>
 
     <!-- tabla  -->
-    <div class="">
+    <div>
+      <div class="tableFormat">
         <table id="transactionTable">
-            <tr>  <!-- tr = fila N -->
-                <th>Tipo</th>   <!-- th = encabezado de tabla -->
-                <th>Descripción</th>
-                <th>Monto</th>
-                <th>Categoría</th>
-            </tr>
-            <tr>    
-                <td>Ingreso</td>
-                <td>Sueldo</td> <!-- datos de tabla  (table date) -->
-                <td>1000</td>
-                <td>Trabajo</td>
-            </tr>
-            <tr>
-                <td>Egreso</td>
-                <td>BigMac</td>
-                <td>7000</td>
-                <td>Comida</td>
-            </tr>
+          <tr>
+            <!-- tr = fila N -->
+            <th>Tipo</th>
+            <!-- th = encabezado de tabla -->
+            <th>Descripción</th>
+            <th>Monto</th>
+            <th>Categoría</th>
+            <th>Eliminar</th>
+          </tr>
+          <!-- Aca se agregan filas dinamicamente -->
         </table>
-
+      </div>
     </div>
 
     <!-- Link a Javascript -->
-    <script src="./script.js">
-    </script>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
