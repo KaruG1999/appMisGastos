@@ -1,6 +1,6 @@
 # 💻 Proyecto Full-Stack JavaScript
 
-Este repositorio contiene los ejercicios y avances realizados a lo largo del curso **Full-Stack JavaScript** de YouTube. El curso está orientado a quienes están dando sus primeros pasos en el desarrollo web con JavaScript, HTML y CSS, abordando tanto el frontend como herramientas esenciales del navegador.
+Este repositorio contiene los ejercicios y avances realizados a lo largo del curso **Full-Stack JavaScript** de YouTube. El curso está orientado a quienes están dando sus primeros pasos en el desarrollo web con JavaScript, HTML y CSS, abordando tanto el frontend como herramientas esenciales del navegador y desarrollo backend.
 
 🎥 Curso completo en YouTube:  
 [Full-Stack JavaScript - Playlist](https://www.youtube.com/playlist?list=PLeYjfE1o93s-cboCgcLsnmGBhuv912FT3)
@@ -9,50 +9,45 @@ Este repositorio contiene los ejercicios y avances realizados a lo largo del cur
 
 📑 [Ver apuntes del curso](./Apuntes_Curso_Fullstack_JavaScript.docx)
 
+## 🛠️ Tecnologías Utilizadas
 
-## 🔧 Herramientas y tecnologías usadas
+**Frontend:**
+- HTML5, CSS3, JavaScript (ES6+)
+- MaterializeCSS (Framework responsivo)
+- LocalStorage para persistencia de datos
 
-### 🖥️ Editor de código
-- **Visual Studio Code**: Editor principal para escribir HTML, CSS y JavaScript.
-- Extensión **Live Server**: para visualizar el proyecto en tiempo real en el navegador.
+**Desarrollo:**
+- Git & GitHub para versionado
+- GitHub Pages para deployment
+- Chrome DevTools para debugging
 
-### 🌐 HTML
-- Estructura base de la aplicación.
-- Elementos utilizados: `<form>`, `<input>`, `<button>`, `<table>`, `<tr>`, `<td>`, `<thead>`, `<tbody>`, `<span>`, etc.
-- Atributos destacados: `id`, `name`, `value`, `type`, `placeholder`.
+**Backend/APIs:**
+- Node.js y npm
+- Fundamentos HTTP/REST API
 
-### 🎨 CSS
-- Estilos visuales básicos aplicados a la interfaz (bordes, márgenes, colores, tipografía).
-- Archivos enlazados mediante la etiqueta `<link>`.
+## 🎯 Proyecto Principal: Gestión Económica
 
-### 💡 JavaScript
-- Declaración de variables (`let`, `const`) y funciones.
-- Uso de condicionales `if`.
-- Manejo de objetos, arrays y fechas (`new Date()`).
-- Interacción con el DOM (`getElementById`, `querySelector`, `innerHTML`, etc.).
-- Eventos: `onclick`, `addEventListener`.
-- Métodos: `.push()`, `.reset()`, `.forEach()`, `.map()`.
-- Creación dinámica de contenido (como filas de tabla).
+**Aplicación web para registro de ingresos y egresos** que demuestra la integración de todas las tecnologías aprendidas:
 
-### 📄 FormData
-- Recolección de datos de formularios de manera estructurada.
+### ✨ Funcionalidades implementadas:
+- **Formularios dinámicos** con validación HTML5 y JavaScript
+- **Tablas interactivas** con datos renderizados dinámicamente
+- **Persistencia de datos** usando LocalStorage
+- **CRUD completo**: Crear, leer y eliminar transacciones
+- **Categorización** mediante selectores dinámicos
+- **Interfaz responsiva** con MaterializeCSS / CSS
+- **Historial de transacciones** como array de objetos en JSON
 
-### 🗃️ Local Storage
-- Almacenamiento persistente en el navegador del usuario.
-- Uso de `JSON.stringify()` para guardar objetos y `JSON.parse()` para recuperarlos.
-- Registro de transacciones como array de objetos.
-- Renderizado automático de datos al cargar la app.
-
-### 🛠️ DevTools del Navegador
-- Consola para depuración con `console.log()`.
-- Inspección y manejo de `localStorage` desde la pestaña **Application**.
-
-
-
+### 🧠 Conceptos aplicados:
+- Manipulación del DOM (`getElementById`, `querySelector`, eventos)
+- Gestión de formularios (`FormData`, `preventDefault`, `reset()`)
+- Trabajo con arrays y objetos (`.push()`, `.forEach()`, `.map()`, `.filter()`)
+- Almacenamiento local (`JSON.stringify()`, `JSON.parse()`)
+- Data attributes para vincular información HTML-JavaScript
+- Validaciones personalizadas y manejo de errores
 
 ---
-📌 *Este proyecto es ideal para comenzar a practicar desarrollo web full-stack con una base sólida de HTML, CSS y JavaScript.*
+
+📌 *Este proyecto es ideal para comenzar a practicar desarrollo web full-stack con una base sólida de HTML, CSS y JavaScript, incluyendo conceptos de backend y APIs.*
 
 🧑‍🏫 *El curso está dictado por un profesor muy dinámico y claro al explicar. Todo se entiende perfectamente, incluso si estás empezando desde cero. ¡Súper recomendable de mi parte!*
----
-
